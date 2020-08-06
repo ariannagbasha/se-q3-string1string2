@@ -28,8 +28,9 @@ __author__ = "Gabby"
 
 
 def donuts(count):
-    # your code here
-    return
+    if(count > 9):
+        return 'Number of donuts: many'
+    return 'Number of donuts: ' + str(count)
 
 
 # B. both_ends
