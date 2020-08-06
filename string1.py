@@ -4,7 +4,7 @@ Kenzie assignment: String1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Gabby got help from Activity: String Indexing and Slicing Excercises"
+__author__ = "Gabby"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -76,11 +76,15 @@ def fix_start(s):
 
 
 def mix_up(a, b):
-    
-    return
+    firstTwoLettersOfB = b[0:2]
+    firstTwoLettersOfA = a[0:2]
+    b = b[2:len(b)]
+    a = a[2:len(a)]
+    return firstTwoLettersOfB + a + ' ' + firstTwoLettersOfA + b
 
 
 # credits and references:
+# got help from Activity: String Indexing and Slicing Excercises
 
 
 # Provided simple test() function used in main() to print
