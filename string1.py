@@ -76,8 +76,11 @@ def fix_start(s):
 
 
 def mix_up(a, b):
-    # your code here
-    return
+    firstTwoLettersOfB = b[0:2]
+    firstTwoLettersOfA = a[0:2]
+    b = b[2:len(b)]
+    a = a[2:len(a)]
+    return firstTwoLettersOfB + a + ' ' + firstTwoLettersOfA + b
 
 
 # Provided simple test() function used in main() to print
