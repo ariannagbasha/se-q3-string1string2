@@ -4,7 +4,7 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "Ara"
+__author__ = "Gabby"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -23,8 +23,12 @@ __author__ = "Ara"
 
 
 def verbing(s):
-    # your code here
-    return
+    if(len(s) > 2):
+        lastThreeLettersOfS = s[-3] + s[-2] + s[-1]
+        if(lastThreeLettersOfS == 'ing'):
+            return s + 'ly'
+        return s + 'ing'
+    return s
 
 
 # E. not_bad
