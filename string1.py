@@ -60,8 +60,9 @@ def both_ends(s):
 
 
 def fix_start(s):
-    # your code here
-    return
+    startingLetter = s[0]
+    s = s[1:len(s)]
+    return startingLetter + s.replace(startingLetter , '*')
 
 
 # D. mix_up
