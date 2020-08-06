@@ -61,8 +61,24 @@ def not_bad(s):
 
 
 def front_back(a, b):
-    # your code here
-    return
+    a_front = ''
+    a_back = ''
+    b_front = ''
+    b_back = ''
+
+    if(len(a) % 2 == 0):
+        a_front = a[0:int(len(a)/2)]
+        a_back = a[int(len(a)/2):int(len(a))]
+    else: 
+        a_front = a[0:int((len(a)/2 + 1))]
+        a_back = a[int((len(a)/2 + 1)):int(len(a))]
+    if(len(b) % 2 == 0):
+        b_front = b[0:int(len(b)/2)]
+        b_back = b[int(len(b)/2):int(len(b))]
+    else: 
+        b_front = b[0:int((len(b)/2 + 1))]
+        b_back = b[int((len(b)/2 + 1)):int(len(b))]
+    return a_front + b_front + a_back + b_back
 
 
 # Provided simple test() function used in main() to print
