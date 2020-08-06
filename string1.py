@@ -40,14 +40,10 @@ def donuts(count):
 # an empty string instead.
 # Example:
 #   'spring' -> 'spng'
-
-
 def both_ends(s):
     if(len(s) < 2):
         return ''
     return s[0:2] + s[-2] + s[-1]
-
-
 # C. fix_start
 # Given a string s, return a string where all occurrences
 # of its first character have been changed to '*', except
@@ -62,7 +58,7 @@ def both_ends(s):
 def fix_start(s):
     startingLetter = s[0]
     s = s[1:len(s)]
-    return startingLetter + s.replace(startingLetter , '*')
+    return startingLetter + s.replace(startingLetter, '*')
 
 
 # D. mix_up
@@ -87,6 +83,8 @@ def mix_up(a, b):
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
+
+
 def test(got, expected):
     if got == expected:
         prefix = ' OK '
