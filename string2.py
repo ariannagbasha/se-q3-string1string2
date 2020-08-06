@@ -4,7 +4,7 @@ Kenzie assignment: String2
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Gabby"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -80,6 +80,10 @@ def front_back(a, b):
         b_front = b[0:int((len(b)/2 + 1))]
         b_back = b[int((len(b)/2 + 1)):int(len(b))]
     return a_front + b_front + a_back + b_back
+
+
+# credits and references:
+# got help from Activity: String Indexing and Slicing Excercises and Joe helped me the pull request
 
 
 # Provided simple test() function used in main() to print
