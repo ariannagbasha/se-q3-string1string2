@@ -4,7 +4,7 @@ Kenzie assignment: String1
 """
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Gabby got help from Activity: String Indexing and Slicing Excercises"
 
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
@@ -45,7 +45,7 @@ def donuts(count):
 def both_ends(s):
     if(len(s) < 2):
         return ''
-    return s[1:2] + s[0:-3]
+    return s[0:2] + s[-2] + s[-1]
 
 
 # C. fix_start
@@ -58,10 +58,11 @@ def both_ends(s):
 # Hint: s.replace(stra, strb) returns a version of string s
 # where all instances of stra have been replaced by strb.
 
-
+# I felt like I could have done this better, any tips ?
 def fix_start(s):
-    # your code here
-    return
+    startingLetter = s[0]
+    s = s[1:len(s)]
+    return startingLetter + s.replace(startingLetter , '*')
 
 
 # D. mix_up
@@ -75,8 +76,11 @@ def fix_start(s):
 
 
 def mix_up(a, b):
-    # your code here
+    
     return
+
+
+# credits and references:
 
 
 # Provided simple test() function used in main() to print
