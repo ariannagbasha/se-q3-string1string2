@@ -23,8 +23,12 @@ __author__ = "???"
 
 
 def verbing(s):
-    # your code here
-    return
+    if(len(s) > 2):
+        lastThreeLettersOfS = s[-3] + s[-2] + s[-1]
+        if(lastThreeLettersOfS == 'ing'):
+            return s + 'ly'
+        return s + 'ing'
+    return s
 
 
 # E. not_bad
