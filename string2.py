@@ -41,8 +41,14 @@ def verbing(s):
 
 
 def not_bad(s):
-    # your code here
-    return
+    beforeString = s.find('not')
+    afterString = s.find('bad')
+    if(beforeString < afterString):
+        if(s[-1] == "!"):
+            return s[0:beforeString] + 'good!'
+        return s[0:beforeString] + 'good' 
+    return s
+    
 
 
 # F. front_back
