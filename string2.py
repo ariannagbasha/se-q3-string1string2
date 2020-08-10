@@ -46,7 +46,7 @@ def not_bad(s):
     if(beforeString < afterString):
         if(s[-1] == "!"):
             return s[0:beforeString] + 'good!'
-        return s[0:beforeString] + 'good' 
+        return s[0:beforeString] + 'good'
     return s
 
 
@@ -69,16 +69,20 @@ def front_back(a, b):
     if(len(a) % 2 == 0):
         a_front = a[0:int(len(a)/2)]
         a_back = a[int(len(a)/2):int(len(a))]
-    else: 
+    else:
         a_front = a[0:int((len(a)/2 + 1))]
         a_back = a[int((len(a)/2 + 1)):int(len(a))]
     if(len(b) % 2 == 0):
         b_front = b[0:int(len(b)/2)]
         b_back = b[int(len(b)/2):int(len(b))]
-    else: 
+    else:
         b_front = b[0:int((len(b)/2 + 1))]
         b_back = b[int((len(b)/2 + 1)):int(len(b))]
     return a_front + b_front + a_back + b_back
+
+
+# credits and references:
+# got help from activities and demo recording
 
 
 # Provided simple test() function used in main() to print
